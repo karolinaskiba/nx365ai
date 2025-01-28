@@ -1,0 +1,8 @@
+# auto-generated file
+path: "/srv/www/nx365/public_html"
+"@vvv":
+  ssh: vagrant
+  path: /srv/www/nx365/public_html
+"@nx365":
+  ssh: vagrant
+  path: /srv/www/nx365/public_html

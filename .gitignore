@@ -1,19 +1,22 @@
-# DANGER!!!
-# This repo is not for your website!
-# You should never commit files from your site here!!!
-# If you want to use git to develop your site, change into `public_html` and clone a repo into that folder, or use git init
-# If you do use this repo, everything you commit will be undone, VVV always resets site provisioner repos to the remote version
+# Ignorowanie danych Vagrant
+.vagrant/
 
-# So Ignore everything
-*
-# And explicitly extra ignore public_html
-/public_html/
-# VVV will hard reset and pull on provision,
-# and you will lose all your work
-# DANGER!!!
+# Ignorowanie WordPress core (jeśli używasz go jako submodułu lub zewnętrznego źródła)
+wp-admin/
+wp-includes/
 
-# But don't ignore these files that VVV needs
-!.gitignore
-!README.md
-!/provision/vvv-init.sh
-!/provision/vvv-nginx-default.conf
+# Ignorowanie wtyczek i motywów (jeśli je instalujesz z zewnątrz)
+wp-content/plugins/
+wp-content/themes/
+
+# Ignorowanie przesłanych plików (np. obrazy)
+wp-content/uploads/
+
+# Ignorowanie plików tymczasowych i logów
+*.log
+*.tmp
+*.bak
+
+# Ignorowanie plików systemowych
+.DS_Store
+Thumbs.db
